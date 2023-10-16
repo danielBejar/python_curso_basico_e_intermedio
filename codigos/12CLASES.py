@@ -24,4 +24,17 @@ A=input("Ingrese el apellido del alumno:")
 B=input("Ingrese la nota del alumno:")
 C.carga(A,B)
 
-#
+#---------------------------------------------------------------------------------------------------------
+
+#otro ejemplo de clases
+
+class curso: 
+        def __init__(self,curso:str , cantidad: int): #Aca lo que hacemos es inicializar la clase curso, ya pidiendo valores de entrada un str y un entero
+                   self.nombre_del_curso=curso   
+                   self.cantidad_alumnos=cantidad   #Lo que hicimos aca es que para inicializar una clase se tenga que pasar 2 valores
+                                                    #Se debe pasar un nombre y un entero para inicializar esta clase.
+
+
+curso1=curso(input("ingrese el nombre del curso:",), input ("Ingrese la cantidad de alumnos:",)) #se crea la nueva clase y se el envia los parametros
+print(curso1.nombre_del_curso)
+print(curso1.cantidad_alumnos)    
