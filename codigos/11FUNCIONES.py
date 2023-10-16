@@ -41,7 +41,14 @@ print(string)
 
 #---------------------------------------------------------------------------------
 #Podemos enviar mas de un valor a un funcion, para eso ponemos un * a la variable
-def imprimir_nombres(*nombres): #Cuando le ponemos un asterisco, podemos pasar mas de un valor
+def imprimir_nombres(*nombres): #Cuando le ponemos un asterisco, podemos pasar mas de un valor, la variable *numeros ahora tiene infinitas dimesiones.
     print("Los nombres recibidos son:",nombres)
 
 imprimir_nombres("Daniel", "Dario","Diego")
+
+#Se puede realizar un for para recorrer las multiples variables enviadas a una funcion
+def numeros(*numeros):
+    for valores in numeros:
+        print(valores,end=" ")
+
+numeros(1,2,3,4,5,6,7,8,9)
