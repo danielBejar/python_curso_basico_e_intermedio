@@ -1,0 +1,369 @@
+Siempre se recomienda  seguir la codificacion PEP-8 a la hora de tipear un texto. 
+
+Fuente: https://ellibrodepython.com
+
+FUNCIONES UTILES EN PYTHOM-----------------------------------------------------------------------------------------------------------------------------
+
+		imput() 				#Permite ingresar un valor por teclado. EJ: age=imput("ingrese su edad")	
+		len(variable) 			#Cuenta el largo de la variable. EJ: print(len(variable)) #imprime el largo de la variable
+		del				#elimina la lista, tupla, set, etc de la memoria 
+
+	Funcion print -----------------------------------------------------
+		
+		print() #imprime en la misma linea.	
+
+		print(variable_a, "texto", variable_b)	#imprimiendo varias variables con un mismo print.
+
+		print ("Hola" + "Pythom" + "3")       	#Suma string dentro de la funcion print
+		
+		print (3 + 3)			#Suma enteros dentro de la funcion print
+
+		print("Texto", end=" ")		#Coloca todos los prints uno al lado del otro.
+
+		Ver el tipo de variable -----------------------
+		
+			print(type(variable_a)) 		#imprime el tipo de variable
+
+		Ver solo el entero de un valor ---------------
+
+			print(int(variable_a))		#imprime solo el valor entero de a
+
+
+		Imprimir varias variables en un solo print------------
+
+			name, surname, age = "Nombre" , "Apellido" , 30
+			print("Mi nombre es {} {} y mi edad es {}" .format(name, surname, age)) #Forma 1 de imprimir varias varibales
+			print("Mi nombre es %s  %s y mi edad es %s" %(name, surname, age))		
+		
+OPERADORES LOGICOS ----------------------------------------------------------------------------------------------------------------------------
+
+	Operadores clasicos: = , + (suma) , * (mult) , /  (div) , %  (resto) 
+	
+	Otros operadores:	// 	#realiza la division pero entrega solo la parte entera
+			** 	#Calcula el exponente. EJ: 2**3 = 2^3 
+
+	Operadores de comparacion: > , < , <= , >=, !=, ==
+
+VARIABLES ----------------------------------------------------------------------------------------------------------------------------------------
+
+	Las variables en python no necesitan ser declaradas como en los lenguajes de bajo nivel. Simplemente con declararla e igualarla ya esta definida.
+	Las variables siempre tienen que deben declararse en MINUSCULA y debe estar unida por guion bajo, no por guio medio, punto, @, etc.
+
+		number = 576  			#Declaramos un entero
+
+		float_number = 7.5			#Declaramos un float
+
+		country = "Este es un string" 	#Asi se declara un string
+
+		city = 'A'				#Declaramos un char
+
+		first_name = ''Daniel Fernando'	#se puede usar tanto '' o ""	
+
+		status = false 			#declaramos una variable de tipo bool	
+	
+	Ver el tipo de variables ----------------------------
+	
+		Para ver el tipo de variable se puede usar el comando type dentro  de la funcion print
+		
+		print(type(variable_a)) 		#muestra el tipo de variable que es variable_a
+
+	
+	Forzar variables ------------------------------------
+
+		Para forzar variables se tiene que usar el comando : y el tipo de variable
+		
+		direccion : str = "Mi direccion" 	#Ahora estamos forzando a que la variable sea un string.
+		numero_de_casa: int=421 		#Forzamos a que la variable sea entera,
+	
+	Variables en conjunto --------------------------------
+
+		Las variables se pueden crear en conjunto [Esto esta mal y no cumple con la codificacion PEP8, la forma correcta es hacerlo linea a linea]
+	
+		name, surname, alias, age, altura = "Daniel", "Bejar" , "daniel-san", 28 , 1.70 #Declaramos 4 variables en la misma linea, 3 strings y 1 entero y un char.
+
+	
+	ACLARACION: 
+	Las variables tambien se puede cambiar su tipo (mutar), un entero lo podemos volver un char y un char a un entero.
+
+	
+	Strings------------------------------------------------
+		my_string = "Mi string"
+		my_string2 = 'Otro string'
+		print(my_string + " " + my_string2) 		#imprime los dos string
+		
+		string3 = "Este string tiene un \n salto de linea"	#string pero con un salto de linea en el medio
+		print(string3)
+
+		string4= "\t Este string tiene tabulacion" 	#string pero un tab
+		print(string4)
+
+		
+CONSTANTES ----------------------------------------------------------------------------------------------------------------------------------------------		
+
+	No se puede hacer constantes en pythom xdxdxd
+
+VECTORES/LISTAS ----------------------------------------------------------------------------------------------------------------------------------------
+
+	Los vectores en python se llaman listas.
+	Las listas puede ser de enteros, flotantes o cadena de caracteres o una combinacion de ambas 
+	Al igual que las variables deben declararse en MINUSCULA y separa por guion bajo cuando se necesite.
+
+	lista_1 = [1,2,3,4,"ASD"] 
+	print ("1--------", lista_1[0]) #muestra el valor de la lista_1 en la primera posicion
+
+
+	Agregar un elemento al final de la lista ---------------------------------[funcion append]
+		lista_1.append(6) #agrega un 6 al final de la lista_1
+		print ("2------", lista_1)	
+	
+	Unir dos listas ---------------------- [funcion extend]
+
+		lista_2 = [5,6,7,8,9]
+		lista_1.extend(lista_2) 		#Une la lista_1 a la lista_2
+		print("3------",lista_1)
+
+	Tambien se puede sumar dos listas:
+	
+		lista_2_1=lista_2 + lista_1
+		print("4------",lista_2_1)
+
+	Insertar un valor en la lista ----------------------- [funcion insert]
+
+		lista_1.insert(1,1.5) 	#Aca agrega el valor 1.5, antes de la posicion 1, es decir antes del valor 2. 
+                    				#recordar que las posiciones empiezan en 0, lista_1[0]=1 , lista_1[1]=2
+		print("5------",lista_1)
+
+	Buscar un valor en  una lista ---------------------- [comando in]
+
+		print("6------",10 in lista_1) #Aca muestra con un true o un false, si el numero 10 esta dentro de la lista_1
+		print("7------",9 in lista_1) #Mostraria un true porque hay un 9 en la lista_1
+
+	Buscar la posicion de un valor ---------------------- [funcion index]
+		
+		print("8------",lista_1.index(1)) #Nos devuelve un 0, porque el uno esta en la posicion 0. lista_1[0]=1
+		print("9------",lista_1.index(3)) #Muestra la POSICION de donde se encuentra el valor 3
+	
+		#Aclaracion: si el valor buscado no esta en la lista, el codigo se ejecutara como error.
+
+	Cuantos valores hay en una lista ------------------- [funcion count]
+
+		print("10------",lista_1.count(6)) #Nos devuelve un 2, debido a que en la lista_1 3 ahora tenemos dos 6.
+
+	Borrar elementos de una lista ------------------------ [funcion pop]
+		
+		lista_1.pop() #Borra el ultimo valor de la lista_1
+		lista_1.pop(0) #Borra el primer valor de la lista_1
+		print ("11------",lista_1)
+
+	Borrar un elemento en especifico-------------------- [funcion remove]
+
+		lista_1.remove(5) #Borra valor 5 de la lista_1, sin importar su ubicacion
+		print ("12------",lista_1) 
+		
+		#Aclaracion: si tenemos valores repetidos, borra el primer valor que encuentre en la lista_1. de izquierda a derecha
+
+	Invertir una lista ------------------------------------- [funcion reverse]
+
+		lista_1.reverse()
+		print ("13------",lista_1)
+
+	Duplicar una lista ----------------------------------------
+		
+		lista_1= lista_1 *2
+		print ("14------",lista_1)
+
+	Ordenar una lista -------------------------------------[funcion sort]
+
+		lista_1.sort() #Ordena de menor a mayor
+		print ("15------",lista_1)
+
+		#Aclaracion: para que funcione el comando sort, todos los elementos de la lista deben ser iguales, o al menos similares.
+
+		#Si queremos ordenar de mayor a menor, usamos la funcion reverse
+		lista_1.sort(reverse=True) #Ordena de mayor a menor
+		print ("16------",lista_1)
+
+	Borrar una lista --------------------------------------[funcion clear]
+	
+		lista_1.clear() #Borra toda la lista_1
+		print ("17------",lista_1)
+	
+
+TUPLAS (listas que no se pueden modificar) ----------------------------------------------------------------------------------------------------------------------------
+
+	Las tuplas son como listas pero no se pueden modificar, agregar valores o eliminar valores y van entre parentesis.
+
+		T= (1,2,3, "asd")
+		print ("1------",T)
+		#T[0]=2   #Aca el compilador me salta error debido a que yo quiero modificar una lista tople
+
+	Convertir a una lista en una tupla --------------------------------------
+
+		lista=[1,2,3,4,5,"dsa"]
+		T=tuple(lista) #Ahora la lista paso a ser una tuple y esta no puede ser modificada.
+		print ("2------",T)
+
+	Buscar un valor dentro de una tupla ------------------[comando in]
+	
+		print("3------",3 in lista) #Aca devuelve un true o un false, si hay un 3 dentro de la tuple llamada lista
+		
+	Buscar la posicion de un valor ---------------------- [funcion index]
+
+		print("4------",lista.index(4)) #me devuelve la posicion donde esta el valor 4
+
+	Cuantos valores hay en una tupla ------------------- [funcion count]
+
+		print("5------",lista.count(3))#Nos devuelve la cantidad de veces que se repite 3
+
+	Cuantos elementos tiene una tupla -------------------[funcion len]
+
+		print("6------",len(lista)) #muestra la cantidad de elementos tiene la tupla
+
+	Convertir una tupla en una lista
+
+		lista = list(lista) #Ahora es una lista y se puede modificar
+		lista = lista * 2
+		print("7------",lista)	
+
+SET (estructuras no repetitivas) ----------------------------------------------------------------------------------------------------------------------------
+	
+	Los sets en Python son una estructura de datos usada para almacenar elementos, pero no permite elementos iguales y no son ordenados
+	como las listas, es decir que no se puede acceder al elemento 0, 1, 2 , etc. 
+
+	my_set = set ([1,2,2,3,4,"palabra"])
+	print("1------",my_set)  #Aca van a ver que el valor solo aparece una vez, eso porque los set no permiten valores iguales.
+
+	my_set2={1,2,2,3,4} #Otra forma de declarar un set
+	print(type(my_set2))
+	print("2------",my_set2)#Aca van a ver que el valor solo aparece una vez, eso porque los set no permiten valores iguales.
+
+	my_set3={"palabra2", "palabra1", "palabra3"}
+	print("3------",my_set3) #se mostrara en el orden que el quiera.
+
+
+	Buscar un valor dentro de un set --------------------------------[comando in]
+	
+		print("3------", 3 in my_set) #Aca devuelve un true o un false, si hay un 3 dentro del set
+		
+
+	Borrar a un elemento  de un set -------------------------------- [comando remove]
+
+		my_set.remove(1) #Borra el valor 1, dentro del set
+		print("4------", my_set)
+
+	Unir dos set ------------------------------------------------------[funcion union]
+		my_set4=my_set.union(my_set3)
+		print("5------", my_set4) 
+	
+	Borrar un set ---------------- --------------------------------------[funcion clear]
+	
+		my_set.clear() #Borra todo  el set
+		print ("6------",my_set)
+		#Aclaracion: el set sigue creado, solo que esta vacio, pero sigue ocupando un espacio de memoria.
+	
+	Agregar un elemento al set ---------------------------------------[funcion add]
+
+		my_set4.add("Nueva palabra")
+		print ("7------",my_set4)
+
+	Borrar un elemento en especifico ----------------------------------[funcion discard]
+
+
+
+	my_set4.discard("Nueva palabra")
+	print ("8------",my_set4)
+
+	Interseccion de dos sets -------------------------------------------[funcion intersection]
+	print("9------",my_set4.intersection(my_set3)) #Devuelve los valores que sean iguales de ambos set
+
+
+DICCIONARIO ------------------------------------------------------------------------------------------------------------------------------------
+
+	Un diccionario en Python es una colección de elementos, donde cada uno tiene una llave key y un valor value. 
+	Los diccionarios se pueden crear con paréntesis {} separando con una coma cada par key: value
+	
+		diccionario={"Nombre del alumno":"Messi", "edad": 31, "carrera": "futbolista"}
+		print("1------", diccionario)
+
+		diccionario_1= dict ([("Nombre del alumno","Escaloni"), ("edad", 38), ("carrera", "tecnico")])
+		print("2------", diccionario_1)
+
+		#Dentro de un diccionario podemos poner listas, duplas, otros diccionarios, etc
+		personas={"Nombre":"Fulano", "Notas":[7,8,6], "laboratorios":{"Lab1":"Aprobado", "Lab2":"Desaprovado", "Lab3":"Aprobado" }}
+		print("13------",personas)
+
+	Ver un valor especifico de un diccionario ----------------------------------------------
+
+		print("2------", diccionario["edad"]) #muestra el valor asociado a la clave "edad"
+
+		print("3------",diccionario.get("edad")) #forma de buscar un valor es usar del comando get
+		
+		#la ventaja de usar el comando get, es que podemos poner un mensaje si no encuentra la clave o el valor que buscamos
+		print("4------",diccionario.get("altura","No se ha encontrado un valor asociado a esta clave"))
+
+	Los valores de los diccionarios no se pueden repetir -------------------------------------
+	
+		diccionario_2={"Nombre del alumno":"Aguero", "edad": 22, "carrera": "futbolista",  "carrera": "futbolista", }
+		print("6------"diccionario_2) #Vemos que por mas que se exista dos  "carrera": "futbolista, solamente muestra 1 de ellos
+
+	Sumar elementos de un diccionario --------------------------------------------------------
+
+		edadtotal=diccionario["edad"]+diccionario_2["edad"]
+		print("La edad total es",edadtotal) #Aca mostraria la edad de ambos  es decir 31+22=44
+
+	Cantidad de elementos de un diccionario ---------------------------------------------------
+
+		print ("8------",len(diccionario)) #Devuele la cantidad de elementos que tiene el diccionario
+
+	Buscar un elemento dentro de un diccionario -----------------------------------------------
+
+		print("9------","edad" in diccionario) #Retorna un true, si existe la clave "edad" dentro del diccionario.
+
+	Ver todas las claves (keys) que tiene un diccionario ---------------------------------------- [funcion key]
+
+		print("10------",diccionario.keys()) #Muestra todas las claves que hay dentro de diccionario
+
+	Agregar valores a un diccionario -------------------------------------------------------------
+
+		diccionario["Segundo nombre del alumno"]="Leo"
+		print("11------",diccionario)
+
+	Cambiar valores dentro de un diccionario ----------------------------------------------------
+
+		diccionario["Nombre del alumno"]="MESSI"
+		print("12------",diccionario)
+
+	Reemplazar valores de un diccionario con los valores de otros diccionario (deben tener la misma key)
+		d1 = {'a': 1, 'b': 2}
+		d2 = {'a': 0, 'd': 400}
+		d1.update(d2) #reemplaza los valores del diccionario 1 con los valores del diccionario 2
+		print("14------",d1)
+
+
+ESTRUCTURAS LOGICAS ------------------------------------------------------------------------------------------------------------------------------------
+
+	Estrutura IF --------------------------------------------------------------
+		
+		numero=int(input("Ingrese un valor:"))
+		
+		if numero>0:
+    			print ("El numero es mayor a 0")
+		else:
+      			 if numero==0:
+      	    			print("El numero es igual a 0 ")
+       			 else:
+				 print("El numero es menor a 0")
+
+	#otra de usar el IF 
+		if numero>0:
+    			print ("El numero es mayor a 0")
+		elif numero==0:  # Elif es como un if que se ejecuta en caso de que el primer if, no se cumpla
+     			print("El numero es igual a 0 ")
+		else:
+ 			print("El numero es menor a 0")
+
+	
+
+
+
+	

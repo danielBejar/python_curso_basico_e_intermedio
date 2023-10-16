@@ -1,0 +1,39 @@
+En una lista, el primer elemento tiene un índice de 0, el segundo elemento tiene un índice de 1, el tercer elemento tiene un índice de 2, y 
+así sucesivamente. Si usas un índice negativo, Python cuenta desde el final de la lista hacia atrás. Un índice de -1 se refiere al último elemento
+, un índice de -2 al penúltimo elemento, y así sucesivamente
+
+FUNCIONES DE LAS LISTAS -----------------------------------------------------------------
+
+	.append(x)			#agrega el valor x un valor al final de la lista.
+	.clear()				#Permite borrar (vaciar) por completo una lista.
+	.count()				#cuenta cuantos x iguales hay dentro de una lista.
+	.extend()				#extiende (une) dos
+	.index()				#devuelve un true o false si existe el valor dentro de la lista.
+	.insert()				#insertar un elemento en una posicion especifica.
+	.pop()				#borra un valor de una posicion determinada. Si no se pone un valor, borrara el ultimo.	
+	.remove()				#borra el valor x una lista, set, etc. 
+	.reverse()				#invierte una lista
+	.sort() 				#Ordena de menor a mayor
+	.sorted()				#Ordena y devuelve una lista nueva, sin modificar la anterior. 
+
+
+FUNCIONES DE LAS TUPLAS ----------------------------------------------------------------
+
+	.count()				#cuenta el numeros de veces que se repite un valor
+	.index()				#devuelve un true o un false, si existe el valor dentro de la tupla
+
+FUNCIONES DE LOS SETS ------------------------------------------------------------------
+
+	.add 				#Agregar elementos a un set
+	.remove()				#eliminar un elemento de un set
+	.discard()				#elimna un elemento en especificon de un set 
+	.clear()				#vacia un set
+	.union()				#Une dos sets
+	.intersection 			#devuelve los valores repetidos de dos sets.
+
+FUNCIONES DE LOS DISCCIONARIOS -----------------------------------------------------
+
+	.key ()				#devuelve todas las claves de un diccionario.
+	.values ()				# devuelve una lista con todos los valores de un diccionario
+	.popitem ()			# elimina de manera aleatoria un elemento del diccionario
+	.update()				#reemplaza los valores de un diccionario con los valores de otro diccionario
