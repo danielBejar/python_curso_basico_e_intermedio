@@ -44,14 +44,14 @@ print(curso1.cantidad_alumnos)
 
 #No es necesario que el la definición de la función esté textualmente dentro de la definición de la clase
 
-def f1(x, y):
+def f1(x, y):          #Esta funcion se encuentra fuera de la clase C
     return x+y
 
 class C:
-        f = f1(2,3)  
+        f = f1(2,3)   #A pesar de que la funcion f1 , esta fuera de esa funcion, puede llamarse dentro de la clase.
         def __init__(self):
             print('clase iniciada')
 
          
-suma=C()
-print(suma.f)
+suma=C() #Se crea una clase C y se lo iguala a suma.
+print(suma.f) #se  imprimie el objeto f de la clase suma
