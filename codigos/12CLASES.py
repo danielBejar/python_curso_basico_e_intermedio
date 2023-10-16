@@ -11,7 +11,7 @@ class nueva_clase:
         print("Objeto nuevo creado")
         print(self.alumnos)
         
-    def carga(self,A,B): #Las funciones (metodos) en un clase, no puede tener elementos vacios, como minimo deben tener un seft
+    def carga(self,A,B): #Las funciones (metodos) en un clase, no puede tener elementos vacios, como minimo deben tener un seft 
         self.alumnos["Apellido:"]=A #Carga la variable A(nombre del alumno) en el diccionario
         self.alumnos["Nota:"]=B  #Carga la variable B(nota) en el diccionario
         print(self.alumnos) #muestra el diccionario cargado
@@ -38,3 +38,20 @@ class curso:
 curso1=curso(input("ingrese el nombre del curso:",), input ("Ingrese la cantidad de alumnos:",)) #se crea la nueva clase y se el envia los parametros
 print(curso1.nombre_del_curso)
 print(curso1.cantidad_alumnos)    
+
+#---------------------------------------------------------------------------------------------------------
+
+
+#No es necesario que el la definición de la función esté textualmente dentro de la definición de la clase
+
+def f1(x, y):
+    return x+y
+
+class C:
+        f = f1(2,3)  
+        def __init__(self):
+            print('clase iniciada')
+
+         
+suma=C()
+print(suma.f)
