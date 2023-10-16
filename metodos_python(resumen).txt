@@ -24,16 +24,17 @@ FUNCIONES DE LAS TUPLAS --------------------------------------------------------
 
 FUNCIONES DE LOS SETS ------------------------------------------------------------------
 
-	.add 				#Agregar elementos a un set
+	.add 					#Agregar elementos a un set
 	.remove()				#eliminar un elemento de un set
 	.discard()				#elimna un elemento en especificon de un set 
 	.clear()				#vacia un set
 	.union()				#Une dos sets
 	.intersection 			#devuelve los valores repetidos de dos sets.
 
-FUNCIONES DE LOS DISCCIONARIOS -----------------------------------------------------
+FUNCIONES DE LOS DICCIONARIOS -----------------------------------------------------
 
-	.key ()				#devuelve todas las claves de un diccionario.
+	.item() 				#devuelve una lista con los keys y values del diccionario
+	.key ()					#devuelve todas las claves de un diccionario.
 	.values ()				# devuelve una lista con todos los valores de un diccionario
-	.popitem ()			# elimina de manera aleatoria un elemento del diccionario
+	.popitem ()				# elimina de manera aleatoria un elemento del diccionario
 	.update()				#reemplaza los valores de un diccionario con los valores de otro diccionario

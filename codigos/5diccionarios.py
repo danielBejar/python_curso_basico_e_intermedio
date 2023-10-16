@@ -1,5 +1,6 @@
 #Los diccionarios, son como los que todos conocemos, son conjutos de palabras que estan asociados a un significado, o un valor
-#Los diccionarios estan formados por claves y el valor, donde una esta asociada a la otra.
+#Los diccionarios estan formados por claves (keys) y el valor(values), donde una esta asociada a la otra.
+#DATO IMPORTANTE: un diccionario puede tener otros diccionarios dentro suyo.
 
 diccionario={"Nombre del alumno":"Messi", "edad": 31, "carrera": "futbolista"}
 print("1------", diccionario)
@@ -12,6 +13,10 @@ print("2------", diccionario["edad"]) #muestra el valor asociado a la clave "eda
 
 #Existe otra forma de buscar un valor es usar del comando get
 print("3------",diccionario.get("edad"))
+
+#Para modificar el valor dentro de un diccionario
+diccionario["edad"]=35
+print("3/1------",diccionario)
 
 #la ventaja de usar el comando get, es que podemos poner un mensaje si no encuentra la clave o el valor que buscamos
 print("4------",diccionario.get("altura","No se ha encontrado un valor asociado a esta clave"))
