@@ -47,7 +47,8 @@ def imprimir_nombres(*nombres): #Cuando le ponemos un asterisco, podemos pasar m
 imprimir_nombres("Daniel", "Dario","Diego")
 
 #Se puede realizar un for para recorrer las multiples variables enviadas a una funcion
-def numeros(*numeros):
+def numeros(*numeros): #numeros es una TUPLA, es decir que los valores enviados a la funcion no se pueden modificar.
+    print(type(numeros))#muestra el tipo de datos que es numero (una tupla)
     for valores in numeros:
         print(valores,end=" ")
 
