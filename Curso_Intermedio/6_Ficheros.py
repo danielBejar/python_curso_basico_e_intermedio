@@ -28,11 +28,11 @@ print(entrada.read())              #lee el txt de forma completa, si no se ejecu
 
 #Para escribir debemos usar el comando cargar w o a.
 salida= open("fichero.txt","a") #El valor a , hace que lo que agreguemos se inserte al final
-salida.write("\nTexto agregadoooo") #El \n es para que escriba en la linea siguiente y no pegado a la ultima linea
+salida.write("\nTexto agregado") #El \n es para que escriba en la linea siguiente y no pegado a la ultima linea
 
 #Aclaracion, si no existe el archivo fichero.txt el VA A CREARLO.
 salida2= open("fichero2.txt","w") #El comando w, lo que hace es borrar todo lo que haya dentro de fichero2.txt antes de escribir en el
-salida2.write("Texto agregadoooo")
+salida2.write("Texto agregado")
 
 
 
