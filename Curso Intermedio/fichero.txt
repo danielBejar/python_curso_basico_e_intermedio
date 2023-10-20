@@ -1,0 +1,3 @@
+Mi nombre es daniel.
+Mi edad es 30 años.
+Este es un curso de python.
