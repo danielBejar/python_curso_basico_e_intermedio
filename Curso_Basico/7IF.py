@@ -28,5 +28,3 @@ if 10<numero<20:
 	print("el valor ingresado se encuentra dentro del rango")
       
 else: print("El numero ingresado no se encuentra dentro del rango")
-
-#-------------------------------
