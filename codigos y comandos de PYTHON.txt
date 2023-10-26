@@ -1,6 +1,7 @@
 Siempre se recomienda  seguir la codificacion PEP-8 a la hora de tipear un texto. 
 
 Fuente: https://ellibrodepython.com
+		https://docs.python.org/
 
 FUNCIONES UTILES EN PYTHOM-----------------------------------------------------------------------------------------------------------------------------
 
