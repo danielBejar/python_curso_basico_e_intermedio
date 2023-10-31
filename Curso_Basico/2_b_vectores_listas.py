@@ -1,6 +1,8 @@
-lista_1 = [1,2,3,4,4.5,"ASD"] 
-print ("1--------", lista_1[0]) #muestra el valor de la lista_1 en la primera posicion
+#Las listas en python estan hechas con [] , si usamos los () estariamos llamando a una tupla que es otro tipo de arreglo de datos.
 
+lista_1 = [1,2,3,4,4.5,"ASD"] 
+print ("1--------", lista_1[0])    #muestra el valor de la lista_1 en la primera posicion
+print ("1/2--------", lista_1[::2]) #se saltea el siguiente valor, muestra el valor 1, 3, 5 , 7, 9 ,11 , etc
 
 #Para agregar un valor al final de la lista_1 usamos el comando append
 lista_1.append(6) #agrega un 6 al final de la lista_1
