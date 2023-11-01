@@ -1,6 +1,7 @@
 #las funciones en py primero deben definirse, para que el compilador sepa que se trata de una funcion, para eso usamos el comando def
 
 def SUMA(num1,num2): #"Acordarse siempre de poner :"
+    """Documentacion de la funciona(explica que hace la funcion, que valores necesita y que valores recibe) cuando le apoyamos el cursor"""
     s= num1 + num2
     return s
 
