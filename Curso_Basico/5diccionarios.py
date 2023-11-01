@@ -6,10 +6,11 @@ diccionario={"Nombre del alumno":"Messi", "edad": 31, "carrera": "futbolista"}
 print("1------", diccionario)
 
 diccionario_1= dict ([("Nombre del alumno","Escaloni"), ("edad", 38), ("carrera", "tecnico")])
-print(diccionario_1)
+print("1/2------",diccionario_1)
 
 #Para ver un valor especifico dentro del diccionario 
 print("2------", diccionario["edad"]) #muestra el valor asociado a la clave "edad"
+print("2------",type(diccionario["edad"])) #muestra que tipo de dato esta asociado a la llave "edad"
 
 #Existe otra forma de buscar un valor es usar del comando get
 print("3------",diccionario.get("edad"))
