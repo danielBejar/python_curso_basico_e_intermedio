@@ -41,7 +41,7 @@ OPERADORES LOGICOS -------------------------------------------------------------
 	Operadores clasicos: = , + (suma) , * (mult) , /  (div) , %  (resto) 
 	
 	Otros operadores:	// 	#realiza la division pero entrega solo la parte entera
-						** 	#Calcula el exponente. EJ: 2**3 = 2^3 
+				#Calcula el exponente. EJ: 2**3 = 2^3 
 
 	Operadores de comparacion: > , < , <= , >=, !=, ==
 
@@ -62,7 +62,7 @@ VARIABLES ----------------------------------------------------------------------
 
 		first_name = ''Daniel Fernando'	#se puede usar tanto '' o ""	
 
-		status = false 			#declaramos una variable de tipo bool	
+		status = False 			#declaramos una variable de tipo bool	
 	
 	Ver el tipo de variables ----------------------------
 	
