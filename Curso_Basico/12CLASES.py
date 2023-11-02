@@ -16,9 +16,15 @@ class nueva_clase:
         self.alumnos["Nota:"]=B  #Carga la variable B(nota) en el diccionario
         print(self.alumnos) #muestra el diccionario cargado
 
+#ACLARACION, el comando self.alumnos hace referencia a el atributo de la clase, siempre que se quiera mostrar, modificar, etc un atributo
+# es decir, una variable que pertenece a la clase, se debe usar el comando self.variable si no lo que hará python es crear una nueva variable local
+# dentro de esa funciona que despues sera borrada cuando se termine de ejecutar la funcion
+# SIEMPRE USAR EL COMANDO SELF PARA MODIFICAR VARIABLES DE LAS CLASES
+
 
 
 C=nueva_clase() #creamos una nueva clase y la llamamos C
+
 
 A=input("Ingrese el apellido del alumno:")
 B=input("Ingrese la nota del alumno:")
@@ -55,3 +61,4 @@ class C:
          
 suma=C() #Se crea una clase C y se lo iguala a suma.
 print(suma.f) #se  imprimie el objeto f de la clase suma
+
